@@ -1,6 +1,7 @@
 import numpy as np
-import pasty
+import patsy
 import warnings
+import statsmodels.formula.api as smf
 
 
 def _pan(a, m, n=15, c=0):
@@ -126,7 +127,6 @@ def dwtest(formula, data, order_by = None, alternative = "greater", exact = None
             ev = np.array([complex(e).real for e in ev])
             ev = ev[ev > tol]
             pdw = _pan(np.concatenate([np.array([[dw]]), np.array(sorted(ev)).reshape(-1, 1)]), ev.shape[0], iterations)
-            print(pdw)
             if alternative == 'two_sided':
                 pval = 2 * min(pdw, 1 - pdw)
             elif alternative == 'less':
