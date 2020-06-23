@@ -1,5 +1,6 @@
 # dwtest
-Durbin-Watson Test
+
+Durbin-Watson Test for Python. This module is the python-version for the `dwtest` function of `lmtest` library in R Language.
 
 ## Install
 
