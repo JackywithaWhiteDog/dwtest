@@ -1,0 +1,20 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+```{r}
+library(lmtest)
+library(readxl)
+```
+
+```{r}
+df <- read_excel('examples.xlsx')
+print(df)
+```
+
+```{r}
+result = lmtest::dwtest(formula = df$Consumption ~ df$Income + df$Price)
+cat('statistic:', result$statistic)
+cat('p-value:', result$p.value)
+```
