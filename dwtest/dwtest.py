@@ -3,7 +3,6 @@ import patsy
 import warnings
 import statsmodels.formula.api as smf
 
-
 def _pan(a, m, n=15, c=0):
     nu = np.argmax(a > a[0])
     if a[1] > a[m]:

@@ -1,0 +1,8 @@
+README.md
+setup.py
+dwtest/__init__.py
+dwtest/dwtest.py
+dwtest.egg-info/PKG-INFO
+dwtest.egg-info/SOURCES.txt
+dwtest.egg-info/dependency_links.txt
+dwtest.egg-info/top_level.txt
