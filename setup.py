@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="dwtest", # Replace with your own username
-    version="0.0.3",
+    version="0.0.4",
     author="JackywithaWhiteDog",
     author_email="jackyliu0129@gmail.com",
     description="Durbin-Watson Test",

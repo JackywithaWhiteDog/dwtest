@@ -1,7 +1,9 @@
 import numpy as np
+import pandas as pd
 import patsy
 import warnings
 import statsmodels.formula.api as smf
+import scipy.stats as stats
 
 def _pan(a, m, n=15, c=0):
     nu = np.argmax(a > a[0])
