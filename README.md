@@ -19,3 +19,7 @@ from dwtest import dwtest
 
 statistic, pvalue = dwtest(formula, data)
 ```
+
+# PyPI
+
+[Link](https://pypi.org/project/dwtest/)
